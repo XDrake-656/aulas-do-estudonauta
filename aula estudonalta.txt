@@ -1,0 +1,5 @@
+                             modulos
+
+comandos:
+import {importa todo o modulo}  
+from x import {importa algo especifico do modulo}
