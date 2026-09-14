@@ -1,0 +1,43 @@
+# 🚀 PLANO DE TRANSIÇÃO DE CARREIRA: DAVI BARROS (PYTHON & DJANGO)
+
+## 📌 Objetivo Técnico: 
+Se tornar Desenvolvedor Web Backend Júnior com foco em Python e Django, focando em portfólio prático de alto nível para ingressar no mercado sem necessidade de faculdade.
+
+## ⏱️ Rotina Diária (4 Horas+):
+* **Hora 1:** Teoria e absorção (assistir às aulas anotando, sem codar junto).
+* **Horas 2 e 3:** Prática Absoluta (fechar o vídeo e tentar recriar o código sozinho).
+* **Hora 4:** Solução de bugs e versionamento (subir os códigos diários para o GitHub).
+
+---
+
+## 📅 CRONOGRAMA DE 4 SEMANAS (PRÉ-PYTHON FULL)
+
+### 🔹 Semana 1: Blindando a Lógica de Programação
+* **O que estudar:** Variáveis, Tipos de Dados, Operadores Matemáticos e Condicionais (if/elif/else).
+* **Onde assistir:** Curso em Vídeo (Python - Mundo 1) do Gustavo Guanabara.
+* **Super Desafio:** Criar um Gerenciador de Gastos Pessoais no terminal que avise se o saldo ficar negativo.
+
+### 🔹 Semana 2: Controlando o Fluxo e Repetições
+* **O que estudar:** Loops (while e for), Listas, Tuplas e Dicionários.
+* **Onde assistir:** Continuação do Mundo 1 e início do Mundo 2 do Curso em Vídeo.
+* **Super Desafio:** Criar um Jogo da Forca completo no terminal.
+
+### 🔹 Semana 3: Organização de Código e Funções
+* **O que estudar:** Criação de funções (def), parâmetros, escopo e tratamento de erros (try/except).
+* **Onde assistir:** Mundo 3 do Curso em Vídeo.
+* **Super Desafio:** Criar um Gerador de Senhas Seguras que salva o resultado em um arquivo `.txt`.
+
+### 🔹 Semana 4: O "Aquecimento" para o Django
+* **O que estudar:** Programação Orientada a Objetos (Classes/Objetos), Protocolo HTTP (requisição/resposta).
+* **Onde assistir:** Canal do YouTube da Pythonando (Caio Sampaio) - assistir às lives e tentar rodar o setup de um miniprojeto antigo.
+
+---
+
+## 🔗 LINKS IMPORTANTES PARA COMEÇAR
+* **Base de Python:** [Curso em Vídeo - Playlist Python 3](https://youtube.com)
+* **Lista de Espera do Curso Pago:** [Python Full - Pythonando](https://pythonando.com.br)
+* **Aulas Avançadas de Django:** [Canal Oficial da Pythonando](https://youtube.com)
+* **Ferramenta Web Prática alternativa:** [Formação Django da Alura](https://alura.com.br)
+
+## 💡 LEMBRETE DE OURO DO DAVI:
+"O código só entra na cabeça quando sai pelos dedos. Erros vermelhos no VS Code fazem parte do processo!"

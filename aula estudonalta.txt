@@ -1,5 +1,53 @@
+     origem python
+
+origem do python-1982 na Holanda
+criado por Guido Van Rorssum para simplificar a linguagem c
+
+nome python em homenagem a monty pyhthon
+
+1995- ensinando o python pela cp4e(computer progremer for everybudy) financiado pelo Darpa
+
+2001 criação da python software foundation
+ 
+python é uma linguagem de proposito geral(ou seja funciona pra quase tudo e não tem um proposito especifico)
+
+uma linguagem fácil e intuitiva e multiplataforma
+
+linguagem de código aberto
+
+linguagem orientada por objetos
+
+muitas bibliotecas
+
+Tim Peters- zen of python (import this)
+
+principais áreas(inteligência artificial, biotecnologia, computação 3d)
+
+python nada mais é que um interprete de linguagem de maquina
+
+
+             tipos primitivos
+
+int = valores inteiros(7,-4,0,9875)
+float = volores flutuantes(4.5,0.076,-15.223,7.0)
+bool = valores verdadeiro ou falso(True,False){sempre escritos em MAISCULO}
+str = string('ola','7.5'){tudo entre parênteses}
+
+             operadores aritméticos
+
+(+ = soma)(- = subtração)(* = multiplicação)(/ = divisão)(** = potencia/pow = potencia)(// = divisão inteira)(% = resto da divisão)
+
+ordem de precedência
+1-(())
+2-(**)
+3-(*,/,//,%)
+4- (+, -)
+
                              modulos
 
 comandos:
 import {importa todo o modulo}  
 from x import {importa algo especifico do modulo}
+
+
+
