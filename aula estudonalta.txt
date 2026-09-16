@@ -49,5 +49,70 @@ comandos:
 import {importa todo o modulo}  
 from x import {importa algo especifico do modulo}
 
+instalar = pip install x { no terminal}
+
+
+
+                      manipular texto
+
+fatiamento:
+variavel[x:x:x]{aonde começa, aonde termina, pulando os micro espaços}
+
+analise:
+len(variavel) {mostra quantos micro espaços na variavel}
+variavel.count('x',x,x){mostra quantos caracteris iguais tem na variavel, aonde começa, aonde termina}
+variavel.find('x'){mostra aonde começa o cacter na variavel}
+'x' in variavel{mostra se tem  aquela cactere na variavel}
+varavel.replace('x','x'){substitui a primeira caracter pela segunda}
+variavel.upper(){coloca todas as caracteres por caracteres em maiusculas}
+variavel.lower(){coloca todas as caracteres por caracteres em minusculas}
+variavel.captaliza(){coloca a primeira caracter em maiuscula e o resto em minuscula}
+variavel.title(){coloca todas as primeiras letras de cada palavra em maiuscula}
+variavel,strip(){remove espaços inuteis no final e no inicio da frase}
+variavel.rstrip(){remmove so os espaços do direita}
+variavel.lstrip(){remmove so os espaços do esquerda}
+
+divisão:
+variavel.split(){sepra em listas com todas as palavras dentro de uma cadeia de caracteres}
+
+junção:
+'-'.join(variavel){junta listas em uma unica variavel com o caracter antes do comando join}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
