@@ -1,0 +1,5 @@
+f=str(input("Digite uma frase:")).strip()
+print("Na frase {} temos:".format(f))
+print("A letra A sem acentuação aparece {} vezes.".format(f.upper().count("A")))
+print("A primeira vez em que a letra A sem acentuação aparece é na posição {}".format(f.upper().replace(" ", "").find("A")+1))
+print("A última vez em que a letra A sem acentuação aparece é na posição {}".format(f.upper().replace(" ", "").rfind("A")+1))

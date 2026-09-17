@@ -79,9 +79,15 @@ junção:
 '-'.join(variavel){junta listas em uma unica variavel com o caracter antes do comando join}
 
 
+                      Condições
 
+if variavel():     {em uma condicional apenas uma das condicionais acontece}
+     bloco True
+else:
+     bloco False
 
-
+condicao simplificada:
+print("exemplo" if variavel x = x else "exemplo")
 
 
 
