@@ -114,6 +114,14 @@ else:
      bloco 3
 
 
+                         Estrutura de Repetição
+                                   for
+
+for c in range(1,10): {}
+     variavel
+variavel
+
+
 
 
 
