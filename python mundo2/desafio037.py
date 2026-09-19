@@ -3,11 +3,11 @@
 n=int(input("Escreva um numero inteiro qualquer: "))
 b=int(input("Escreva para qual sera a base de conversão 1= 'binario', 2= 'octal', 3= 'hexadecimal': "))
 if b == 1:
-    print("O numero {} em binario se escreve {}.".format(n, bin(n)))
+    print("O numero {} em binario se escreve {}.".format(n, bin(n)[2:]))
 elif b == 2:
-    print("O numero {} em octal se escreve {}.".format(n, oct(n)))
+    print("O numero {} em octal se escreve {}.".format(n, oct(n)[2:]))
 elif b == 3:
-    print("O numero {} em hexadecimal se escreve {}.".format(n, hex(n)))
+    print("O numero {} em hexadecimal se escreve {}.".format(n, hex(n)[2:]))
 else:
     print("Você não escreveu uma base de conversao aceitavel!!!")
 '''
