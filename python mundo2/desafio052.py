@@ -15,7 +15,8 @@ else:
             v = False
 print(f"O numero {n} é primo"if v == True else f"O numero {n} não é primo")
 
-""" #como o professor fez
+"""
+#como o professor fez
 num = int(input("digite um numero: "))
 tot = 0
 for c in range(1, num +1):
@@ -30,4 +31,3 @@ if tot == 2:
     print("E po isso ele é PRIMO!")
 else:
     print("E por isso ele NÃO É PRIMO!")
-

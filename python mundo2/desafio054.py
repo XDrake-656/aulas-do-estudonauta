@@ -8,7 +8,7 @@ for c in range(0,7):
     idade = (ano - nascimento)
     grupo = grupo + 1
     print (idade)
-    if  idade < 18:
+    if  idade < 21:
         grupo_menor = grupo_menor + 1
         print("voce é menor de idade")
     else:
