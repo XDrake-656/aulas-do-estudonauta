@@ -82,7 +82,7 @@ junção:
                            ANSI
                     (escape sequencial)
 
-\033[style;text;back m
+\033[X;X;Xm style;text;back m
 style:         /  text:            / back:
 0 = none       /  30 = branco      / 40 
 1 = bold       /  31 = vermelho    / 41
