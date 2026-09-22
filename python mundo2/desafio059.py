@@ -18,11 +18,11 @@ numeros selecionados {num1} e {num2}
 qual das opções acima você deseja realizar: """))
     if programa == 1:
         print(f"{num1} + {num2} = {num1 + num2}")
-        programa=input("aperte [5] para parar ou enter para voltar para o menu.") or 0
+        programa=input("aperte [5] para parar ou ENTER para voltar para o menu.") or 0
         programa=int(programa)
     elif programa == 2:
         print(f"{num1} X {num2} = {num1*num2}")
-        programa=input("aperte [5] para parar ou enter para voltar para o menu.") or 0
+        programa=input("aperte [5] para parar ou ENTER para voltar para o menu.") or 0
         programa=int(programa)
     elif programa == 3:
         if num1 > num2:
@@ -31,16 +31,14 @@ qual das opções acima você deseja realizar: """))
             print(f"O numero {num2} é maior que {num1}.")
         else:
             print(f"Os numeros {num1} e {num2} são iguais.")
-        programa=input("aperte [5] para parar ou enter para voltar para o menu.") or 0
-        programa=int(programa)
+        programa=input("aperte [5] para parar ou ENTER para voltar para o menu.") or 0
+        programa=int(programa) 
+    elif programa > 5 or programa < 1:
+            print("voce digitou um valor não valido")
+            programa=input("aperte [5] para parar ou ENTER para voltar para o menu.") or 0
+            programa=int(programa)
     
     if programa == 5:
         print("fechando programa....")
         sleep(2)
-
-    elif programa > 5:
-        print("voce digitou um valor não valido")
-        programa=input("aperte [5] para parar ou enter para voltar para o menu.") or 0
-        programa=int(programa)
-
 print("programa finalizado!")

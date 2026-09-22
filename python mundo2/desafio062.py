@@ -6,11 +6,12 @@ termos = 10
 while numeros != termos:
     pa = primeiro + (numeros * razao)
     numeros += 1
-    print(pa, end=" →")
+    print(pa, end=", ")
     if numeros == termos:
-        print(".... ACABOU.")
+        print(".....")
         mais = int(input("\nesses foram os 10 primeiros termos, voce quer mais quantos termos dessa pa (digite 0 se quiser mais)"))
         if mais == 0:
-            print("fim")
+            print(f"esses foram os {termos} termos dessa pa.")
         else:
-            termos = termos + mais
+            termos += mais
+print("FIM!")

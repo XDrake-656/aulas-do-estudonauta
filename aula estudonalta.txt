@@ -129,10 +129,22 @@ bloco 2
 while not variavel: {repete o bloco 1 ate a variavel desejada}
      bloco 1
 
-bloco 2
+bloco 2 {bloco ja fora do laco de Repetição}
 
+                                   break
+                                  
+while not variavel: {repete o laço ate a variavel desejada}
+     if:
+          bloco 1
 
+     if: 
+          bloco 2
 
+     if:
+          bloco 3
+          break    {interrompe o o laço de repeticao e da sequencia ao codigo}
+
+bloco 4 {bloco ja fora do laco de Repetição}
 
 
 

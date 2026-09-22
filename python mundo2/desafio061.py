@@ -5,5 +5,5 @@ numeros = 0
 while numeros != 10:
     pa = termo + (numeros * razao)
     numeros += 1
-    print(pa, end=" →")
+    print(pa, end=", ")
 print(".... ACABOU.")
