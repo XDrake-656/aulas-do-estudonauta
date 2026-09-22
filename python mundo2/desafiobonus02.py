@@ -26,9 +26,9 @@ elif nivel == 3:
 letras = list(palavra)
 print(f"ok voce escolheu o nivel {nivel} vamos comessar!")
 sleep(2)
-print("estou pensando em palavra......")
+print("estou pensando em uma palavra......")
 sleep(2)
-print(f"OK a palavra que estou pensando tem {len(palavra)} letras")
+print(f"OK a palavra que estou pensando tem {len(palavra)} letras \ne você tem {max_tentativas - 1} tentativas para acertar a palavra.")
 
 tentativas = 1
 letras_chutadas = ""
@@ -66,7 +66,7 @@ while tentativas != max_tentativas:
             ganhou = True
             break    
 
-if ganhou:
+if ganhou == True:
     print(f"Você acertou!!! a palavra era mesmo {palavra}")
     print(f"Você chutou essas letras {letras_chutadas}.")
     print(f"\033[1;32m{"YOU WIN":=^40}\033[m")
