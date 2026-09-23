@@ -18,7 +18,7 @@ while True:
         n1 = num // 1
         print(f"Total de {n1} notas de R$1")
         num -=(n1 *1)
-    num = int(input("Que sacar mais algum valor? \nSe NÃO digite [ 0 ] \nSe SIM digite quanto: "))
+    num = int(input("Que sacar mais algum valor? \nSe NÃO digite [ 0 ] \nSe SIM digite quanto: R$ "))
     if num == 0:
         break
     

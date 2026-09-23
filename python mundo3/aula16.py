@@ -20,8 +20,9 @@ a = (2, 5, 4)
 b = (5, 8, 1, 4)
 c = a + b
 print(c)
+print(c.index(8))
 
 pessoa = ("Davi", 25, "M", 2001)
 print(pessoa)
 del(pessoa)
-print(pessoa)
+#print(pessoa) nao vai funcionar mais depois do 'del'
