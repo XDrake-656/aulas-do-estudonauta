@@ -1,4 +1,6 @@
-     origem python
+                              mundo 1
+
+                           Origem Python
 
 origem do python-1982 na Holanda
 criado por Guido Van Rorssum para simplificar a linguagem c
@@ -26,14 +28,14 @@ principais áreas(inteligência artificial, biotecnologia, computação 3d)
 python nada mais é que um interprete de linguagem de maquina
 
 
-             tipos primitivos
+                         Tipos Primitivos
 
 int = valores inteiros(7,-4,0,9875)
 float = volores flutuantes(4.5,0.076,-15.223,7.0)
 bool = valores verdadeiro ou falso(True,False){sempre escritos em MAISCULO}
 str = string('ola','7.5'){tudo entre parênteses}
 
-             operadores aritméticos
+                         Operadores Aritméticos
 
 (+ = soma)(- = subtração)(* = multiplicação)(/ = divisão)(** = potencia/pow = potencia)(// = divisão inteira)(% = resto da divisão)
 
@@ -43,7 +45,7 @@ ordem de precedência
 3-(*,/,//,%)
 4- (+, -)
 
-                             modulos
+                             Modulos
 
 comandos:
 import {importa todo o modulo}  
@@ -53,7 +55,7 @@ instalar = pip install x { no terminal}
 
 
 
-                      manipular texto
+                            Manipular Texto
 
 fatiamento:
 variavel[x:x:x]{aonde começa, aonde termina, pulando os micro espaços}
@@ -93,6 +95,7 @@ style:         /  text:            / back:
                /  36 = ciano       / 46
                /  37 = cinza       / 47
 
+                           Mundo 2
 
                           Condições
 
@@ -117,21 +120,21 @@ else:
 
                          Estrutura de Repetição
 
-                                  (for)
+                             (for)
 
 for variavel in range(1,10): {repete o bloco 1 por quantas vezes voce decidir nos ()}
      bloco 1
 
 bloco 2
 
-                                   (while)
+                              (while)
 
 while not variavel: {repete o bloco 1 ate a variavel desejada}
      bloco 1
 
 bloco 2 {bloco ja fora do laco de Repetição}
 
-                                   break
+                              (break)
                                   
 while not variavel: {repete o laço ate a variavel desejada}
      if:
@@ -146,13 +149,24 @@ while not variavel: {repete o laço ate a variavel desejada}
 
 bloco 4 {bloco ja fora do laco de Repetição}
 
+                         Mundo 5
 
+                    Variaveis Compostas
+                         (Tuplas)
 
+Uma tupla é uma sequência ordenada de elementos ou valores agrupados em uma única estrutura.
 
+usamos () para escrever uma tupla
+e [] para referenciar
 
+* As TUPLAS são IMUTAVEIS
 
+variavel = ("variavel", "variavel", "variavel", "variavel")
+print(variavel[x:x:x])
 
+Pode se apagar uma tupla usando comando:
 
+del(tupla) {porem nao se pode uasar del para apagar algun elemento da tupla apenas ela inteira}
 
 
 

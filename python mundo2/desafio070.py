@@ -6,15 +6,11 @@ while True:
     preco = float(input("Preço: R$"))
     if preco > 1000:
         alto += 1
-    if total == 0:
+    if total == 0 or preco < barato:
         nome_barato = nome
         barato = preco
-    elif preco < barato:
-        nome_barato = nome
-        barato = preco
-
     total += preco    
-    continuar  = str(input("Quer continuar? [S/N] ")).strip().upper()[0]
+    continuar  = ""
     while continuar != "S" and continuar != "N":
         continuar  = str(input("Quer continuar? [S/N] ")).strip().upper()[0]
     if continuar == "N":

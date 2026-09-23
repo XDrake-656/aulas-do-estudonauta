@@ -12,17 +12,22 @@ print(f"{" FORCA ":=^40}" + """\nVamos jogar forca, as regras são:
 [4] = Você pode escolher a dificuldade do jogo digitando (1 facil / 2 medio / 3 dificil)
 [5] = Quanto mais dificil MENOS chutes você vai ter.""")
 
-nivel = int(input("\nesolha a dificuldade(1/2/3): "))
-
-if nivel == 1:
-    palavra = choice(palavras_facil)
-    max_tentativas = 8
-elif nivel == 2:
-    palavra = choice(palavras_medio)
-    max_tentativas = 7
-elif nivel == 3:
-    palavra = choice(palavras_dificil)
-    max_tentativas = 6
+nivel = " "
+while nivel not in '123':
+    nivel = str(input("\nesolha a dificuldade(1/2/3): ")).strip()[0]
+    if nivel == '1':
+        palavra = choice(palavras_facil)
+        max_tentativas = 8
+    elif nivel == '2':
+        palavra = choice(palavras_medio)
+        max_tentativas = 7
+    elif nivel == '3':
+        palavra = choice(palavras_dificil)
+        max_tentativas = 6
+    else:
+        print("Você digitou um valor não valido!!!")
+        sleep(1)
+        
 letras = list(palavra)
 print(f"ok voce escolheu o nivel {nivel} vamos comessar!")
 sleep(2)
@@ -43,14 +48,13 @@ while tentativas != max_tentativas:
     if len(chute) > 1:
         if chute == palavra:
             ganhou = True
-            break
+        break
 
     if len(chute) == 1:
         if chute not in respostas:
             print("\033[1;31mEntrada inválida! Digite apenas letras de A a Z sem CARACTERES ou ACENTUAÇÃO.\033[m")
             continue
 
-        
         tentativas += 1
         letras_chutadas += str(chute)
         todas_letras_descobertas = True

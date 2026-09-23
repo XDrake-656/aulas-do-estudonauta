@@ -18,15 +18,14 @@ digite: """))
             s = float(input("Digite o valor ganho (digite '0' para parar): "))
             if s == 0:
                     break
-            else:
-                totalGanho += s    
+            
+            totalGanho += s    
     elif pergunta == 2:
         while True:
             g = float(input("Digite seus gastos (digite '0' para parar): "))
             if g == 0:
-                break
-            else:
-                totalGastos += g
+                break            
+            totalGastos += g
     elif pergunta == 3:
         break        
     else:
