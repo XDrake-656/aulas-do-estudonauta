@@ -63,7 +63,8 @@ variavel[x:x:x]{aonde começa, aonde termina, pulando os micro espaços}
 analise:
 len(variavel) {mostra quantos micro espaços na variavel}
 variavel.count('x',x,x){mostra quantos caracteris iguais tem na variavel, aonde começa, aonde termina}
-variavel.find('x'){mostra aonde começa o cacter na variavel}
+variavel.find('x'){mostra aonde começa o cacter na variavel em uma string}
+variavel.index("variavl") {mostra o index da variavel em uma lista}
 'x' in variavel{mostra se tem  aquela cactere na variavel}
 varavel.replace('x','x'){substitui a primeira caracter pela segunda}
 variavel.upper(){coloca todas as caracteres por caracteres em maiusculas}
@@ -73,6 +74,8 @@ variavel.title(){coloca todas as primeiras letras de cada palavra em maiuscula}
 variavel,strip(){remove espaços inuteis no final e no inicio da frase}
 variavel.rstrip(){remmove so os espaços do direita}
 variavel.lstrip(){remmove so os espaços do esquerda}
+variavel.sort() {reorganiza uma variavel composta em ordem crescente ou alfabetica}
+variavel.sort(reverse = True) {reorganiza uma variavel composta em ordem porem ao contrario}
 
 divisão:
 variavel.split(){sepra em listas com todas as palavras dentro de uma cadeia de caracteres}
@@ -161,12 +164,47 @@ e [] para referenciar
 
 * As TUPLAS são IMUTAVEIS
 
-variavel = ("variavel", "variavel", "variavel", "variavel")
-print(variavel[x:x:x])
+tupla = ("variavel", "variavel", "variavel", "variavel")
+print(variavel[x:x:x]) {usando fatiamento}
 
 Pode se apagar uma tupla usando comando:
 
 del(tupla) {porem nao se pode uasar del para apagar algun elemento da tupla apenas ela inteira}
+del tupla(x) {NÃO FUNCIONA}
+
+                         (listas)
+
+usmos [] para escrever uma listas
+
+* As listas são mutaveis
+
+como criar uma lista:
+lista = ["varavel", "variavel", "variavel"]
+list(variavel) {cria uma lista da variavel}
+
+como adicionar elementos na lista:
+
+lista[x] = "variavel" {substitui uma variavel por outra sendo o valor de "x"}
+lista.append("variavel"){adiciona uma variavel no final de uma lista}
+lista.insert(x, "variavel"){como adicionar uma variavel em qualquer lugar de uma lista, "x" = posição da variavel}
+
+como deletar listas e suas Variaveis:
+
+del(lista) {deletar a lista do codigo}
+del lista[x] {apagar uma variavl de uma lista na posição "x"}
+lista.pop(X) {apagar a variavel na posição "x" se nao tiver um valor ele apaga a ultima variavel da lista}
+lista.remove("variavel") {apagar a primeira variavel da lista e reorganiza os indixes da lista}
+
+*Caso tente apagar um item de uma lista e esse item não existir na lista o codigo dara um erro
+para evitar use um if. Como asseguir:
+
+if variavel in lista:
+     lista.remove("varavel")
+
+criando listas com range:
+
+lista = list(range(x,x)) {cria uma lista uando os valores "x" e "x"}
+
 
 
 
