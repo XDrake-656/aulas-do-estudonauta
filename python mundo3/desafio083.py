@@ -1,6 +1,4 @@
 operadores =['+','-','*','/']
-abre = ["("]
-fecha = [")"]
 casa = 0
 verdadeiro = False
 operacao = False

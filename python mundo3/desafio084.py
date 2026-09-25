@@ -13,7 +13,6 @@ while True:
         continua = input("VocÊ quer adicinar mais um usuario? [S/N] ").strip().upper()[0]
     if continua == "N":
         break
-
 maior_peso = max(grupo, key=lambda peso: peso[1])[1]
 menor_peso = min(grupo, key=lambda peso: peso[1])[1]
 for pessoa in grupo:
