@@ -16,13 +16,19 @@ while True:
         break
 media = 0
 for k in range(len(grupo)):
-     print(grupo[k]["idade"])
      media += grupo[k]["idade"]
 media_total = media / len(grupo)
 mulheres = []
+pesoa_acima_media = []
 for f in range(len(grupo)):
-     
+    if grupo[f]["sexo"] == "F":
+        mulheres.append(grupo[f]["nome"])
+    if grupo[f]["idade"] > media_total:
+        pesoa_acima_media.append(grupo[f]["nome"])
+        
 print(grupo)
+print("-="*30)
 print(f"O grupo tem {len(grupo)} pessoas.")
 print(f"A media de idade é de {media_total:.2f}")
-print(f"As mulheres cadastradas foram: {}")
+print(f"As mulheres cadastradas foram: {", ".join(mulheres)}")
+print(f"Lista das pessoas que estão acima da media de idade do grupo: {", ".join(pesoa_acima_media)}")
