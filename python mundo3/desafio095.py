@@ -23,7 +23,7 @@ print("=-"*40)
 print(f"{"COD NOME":<20}{"GOLS":<15}{"TOTAL":5}")
 print("="*40)
 for j, jog in enumerate(jogadores, start = 1):
-    print(f"{j:<3} {jog["nome"]:<17}{jog["gols"]}{jog["total"]:>10}")
+    print(f"{j:<3} {jog['nome']:<17}{', '.join(map(str, jog['gols'])):<15}{jog['total']:>5}")
 while True:
     continua = -1
     while continua != 999:

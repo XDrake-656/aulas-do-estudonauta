@@ -7,7 +7,7 @@ for j in range(1, partidas + 1):
     gol = int(input(f"Quantas gols na partida {j}°? "))
     gols.append(gol)
     total_gols += gol
-jogador["gols"] = gols
+jogador["gols"] = gols[:]
 jogador["total"] = total_gols
 print("=-"*30)
 print(jogador)

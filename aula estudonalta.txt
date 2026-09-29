@@ -221,6 +221,8 @@ print(lista[0][0]) {retorna a "variavel 0" da lista na posição 0}
 print(lista[2][1]) {retorna a "variavel 1" da lista na posição 2}
 print(lista[1]) {retorna as variaveis "variavel 0" e "variavel 1"  da lista na posição 1}
 
+sum(lista) {soma os valores dentro de uma lista}
+
 exemplo:
 
 galera = [["João", 19], ["Ana", 33], ["Joaquim", 50], ["Maria", 15]]
