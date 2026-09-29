@@ -269,20 +269,99 @@ locadora = [{"titulo":"Star Wars", "Ano":"1977", "diretor":"George Lucas"}, {"ti
 print(locadora[0]["Ano"]) retotna: 1977
 print(locadora[1]["titulo"]) retotna: Matrix
 
+criando copias de dicionarios:
+
 * diferente das listas que para criar uma copia de uma lista sem corelacionalos que se usava
 o metodo [:]. Os dicionarios são um pouco diferentes se tentar da mesma forma que as lista
 dara erro no codigo, tem que se uasar (.copy()):
 
 lista.append(dicionario.copy()) {metodo correto sem dar erro}
 
+                         Funções
 
+* Todas as Funções do python são escritas com parênteses 'função()'
 
+para criar uma função usamos o comando (def):
 
+def função(): {voce cria uma nova função personalizada para seu codigo}
+     bloco1
 
+                         Interective Help
 
+help() {mostra informaçoes sobre a função desejada}
 
+print(função.__doc__) {mostra a documentação do comando desejado}
 
+                         Docstrings
 
+manual de uma função:
+para criar uma docstrings basta digitar o manual entre tres aspas duplas logo abaixo do comando def.
+def função(x,x,x):
+     """ documentação """
+     bloco 1
+
+help(função) retorna: documentação
+
+                         Parametros Opicionais
+
+posso declarar Parametros Opicionais para as funcoes
+
+def função(x = 0, x = 0, x = 0):
+     """doc"""
+     bloco 1
+função() {o programa pode funcionar mesmo sem Parametros ja que eles ja que ja possui Parametros ja declarados}
+
+                         Escopo de Variáveis
+
+variavel global = {por mais que seja declarada fora de uma função ela faz parte do programa principal}
+
+variavel local = {reconhece os valores apenas aonde foram declarados}
+
+exemplo:
+def teste(b):
+     b+= 4
+     c = 2  {escopo local:a = 5, b = 9 e c = 2
+               reconhece todos os valares inclusive o valor a mesmo que seja declarado fora
+                da função ja que o valor a é reconhecido como valor global}
+
+a = 5
+teste(a) {escopo global: a = 5
+               reconhece apenas o valor de a ja que ele era o unico valor no escopo global}
+
+* CUIDADO caso um variavel seja declarada no escopo local ela passa ser uma outra variavel
+exemplo:
+def teste(b):
+     a = 8
+     b+= 4
+     c = 2  {escopo local:a = 8, b = 9 e c = 2}
+
+a = 5
+teste(a) {escopo global: a = 5
+               variavel a continua valendo 5 mesmo que na função ele tenha recebido outro valor}
+
+caso queira que o a local seja considerado o a variavel global use o comando:
+(global variavel)
+
+exemplo:
+def teste(b):
+     global a
+     a = 8
+     b+= 4
+     c = 2  {escopo local:a = 8, b = 9 e c = 2}
+
+a = 5
+teste(a) {escopo global: a = 8
+               variavel mudou de valor ja que mesmo localmente voce fez o python considerar ela
+               globalmente
+
+                         Retornando valores
+                              (return)
+
+def função(a,b,c):
+     X = a + b + c 
+     return X      {faz com que ele retorne o valor de X}
+
+variavl = função(a,b,c)
 
 
 
