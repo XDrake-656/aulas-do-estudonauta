@@ -1,4 +1,4 @@
-from ex107ao112.ex111 import moeda
+from ex107ao112.utilidadesCeV import moeda
 
 p = float(input("Digite o preço: R$"))
 moeda.resumo(p, 80, 35)
