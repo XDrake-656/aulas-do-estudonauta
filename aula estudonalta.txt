@@ -352,7 +352,7 @@ def teste(b):
 a = 5
 teste(a) {escopo global: a = 8
                variavel mudou de valor ja que mesmo localmente voce fez o python considerar ela
-               globalmente
+               globalmente}
 
                          Retornando valores
                               (return)
@@ -362,6 +362,44 @@ def função(a,b,c):
      return X      {faz com que ele retorne o valor de X}
 
 variavl = função(a,b,c)
+
+
+                         Modulos e Pacotes
+
+                         (Modularização)
+
+Surgiu no inicio da década de 60
+
+Sistema ficando cada vez maiores
+
+foco: 
+* dividir um programa grande
+
+* aumentar a legitibilidade
+
+* facilitar a manutenção
+
+vantagens:
+
+* organização do codigo
+
+* Facilidade na manutenção
+
+* ocultação de codigo detalhado
+
+* reutilizacao em outros projetos
+
+crie arquivos com Funções e ultilize nos seus outros arquivos de codigo
+
+basta usar o comando import ou from "x" import "x" para trazer as funções para o seu codigo
+
+                         (Pacotes)
+                    
+simplismente uma pasta com arquivos com funções
+
+para criar uma pasta reconhecivel no python crie um arquivo dentro da pasta com o nome (__init__.py)
+
+
 
 
 

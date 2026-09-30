@@ -5,18 +5,14 @@ def notas(*nota, sit = False):
     :return: dicionario com varias informações sobre a situação da turma.
     """
     n ={}
-    medias = 0
     n["total"] = len(nota)
     n["maior"] = max(nota)
     n["menor"] = min(nota)
-    for c in range(len(nota)):
-        medias += nota[c]
-    media_total = round((medias/len(nota)),2)
-    n["media"] = media_total
+    n["media"] = round(sum(nota)/len(nota),2)
     if sit == True:
-        if media_total < 6:
+        if n["media"] < 6.00:
             n["situação"] = "RUIM"
-        elif media_total < 7:
+        elif n["media"] < 7.00:
             n["situação"] = "RAZOAVEL"
         else:
             n["situação"] = "BOA"
