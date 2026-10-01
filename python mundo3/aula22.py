@@ -1,4 +1,4 @@
-from uteis import numeros
+from Aula22 import numeros
 
 n = int(input("digite um numero: "))
 print(f"A função do {n} é {numeros.fatorial(n)}")

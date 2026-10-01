@@ -23,5 +23,3 @@ print(turmas[0][2][1][1])
 grupo = [{'nome': 'Davi', 'sexo': 'M', 'idade': 25}, {'nome': 'Maria', 'sexo': 'F', 'idade': 18}]
 print(grupo[1]["idade"])
 
-print("\033[41mEste é um aviso com a linha inteira vermelha!\033[K\033[m")
-print("\033[42mLinha inteira verde para sucesso!\033[K\033[m")

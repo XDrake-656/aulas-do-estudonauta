@@ -1,0 +1,5 @@
+davi:25
+gustavo:50
+Jose:35
+Gui:18
+Maria Paula:10

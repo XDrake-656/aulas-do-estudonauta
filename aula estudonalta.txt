@@ -400,12 +400,44 @@ simplismente uma pasta com arquivos com funções
 para criar uma pasta reconhecivel no python crie um arquivo dentro da pasta com o nome (__init__.py)
 
 
+                         Tratamento de Erro
+                              (Erro)
 
+erros de sintaxe no programa exemplo: 
+primt(X) <= erro
+print(x) <= correto
 
+                              (Exceção)
 
+Exceçãos são quando um programa não necessariamente tem erros de sintaxe, mas o codigo apresenta erro quando ele recebe um valor não valido
+exemplo:
+n = int(input("Digite um numero: ")) 
 
+* O programa pode dar um erro caso o usuario digite "oito" ou inves de digitar "8" assim dando erro: ValueError
+pois o programa esperava receber uma variavel de valor inteiro e não uma variavel do tipo string
 
+* Podemos usar o comando exception para ver o tipo de erro no codigo
 
+* Podemos usar o comando try para fazer o programa tentar fazer algo ao inves de fazer. Exemplo:
 
+try:
+     operação
 
+except:
+     falhou
+else:
+     deu certo
+finally:
+     certo/falha
 
+* Lembrando que se pode ter varios comandos except no mesmo try:
+
+try:
+     operação
+except:
+     falhou
+except:
+     falhou
+except:
+     falhou
+....
