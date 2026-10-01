@@ -1,7 +1,6 @@
 from ex115.sistema import *
 from ex115.arquivo import *
 from time import sleep
-cadastradas = dict()
 arq = "pessoascadastradas.txt"
 if not arquivoExiste(arq):
     criarArquivo(arq)
@@ -11,9 +10,7 @@ while True:
     opc = leiaInt(f"{cores(2)}Sua opção: {cores()}")
     if opc == 1:
         leiaArquivo(arq)
-        #for pesoa in range(len(lista)): 
-            #
-        
+
     elif opc == 2:
         titulo("NOVO CADASTRO")
         nome = input("NOME: ").strip().title()
