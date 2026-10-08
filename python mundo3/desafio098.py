@@ -1,4 +1,6 @@
 from time import sleep
+
+
 def contagem(inicio, fim, passo):
     print("=-"*20)
     if passo == 0:

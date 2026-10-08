@@ -1,5 +1,6 @@
 from random import randint
 from time import sleep
+
 computador = randint(1, 100)
 jogos_ganhos = 0
 print(("=-="*5) + "VAMOS JOGAR PAR OU IMPAR" + ("=-="*5))

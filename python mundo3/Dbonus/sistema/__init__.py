@@ -1,3 +1,7 @@
+# flake8: noqa: N999
+# pylint: disable=invalid-name
+
+
 def cores(cor=0):
     if cor == 0:
         return "\033[m"#limpa
@@ -21,7 +25,7 @@ def tabela(lista):
         print(f"{cores(3)}{c + 1}{cores()} => {cores(4)}{lista[c]}{cores()}")
     print("=" * 40)
 
-def leiaInt(txt):
+def leia_int(txt):
     while True:
         try:
             num = int(input(txt))
@@ -35,18 +39,34 @@ def leiaInt(txt):
             return num
 
 
-def cadastrarSenha(txt):
+def cadastrar_senha(txt):
     from random import choice
+    from time import sleep
     caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%¨&*()_+"
+    senha_valida = False
+    confirma_senha = False
     while True:
         print("digite uma senha entre 6 a 8 caracteres.[digite 0 para gerar uma senha eleatoria]")
         s = input(txt).strip()
         if len(s) >= 6 and len(s) <= 8:
-            break
+            senha_valida = True
         elif s == "0":
             s = "".join(choice(caracteres) for c in range(8))
             print(f"{cores(2)}Senha gerada com sucesso!{cores()} copie e salve: {s}")
-            return s
+            senha_valida = True
         else:
             print(f"{cores(1)}A senha deve ter entre 6 e 8 caracteres.{cores()}")
-    return s
+            
+        if senha_valida == True:
+            while True:
+                comfirma = input("Agora comfirme sua senha:[0 para criar nova senha] ").strip()
+                if comfirma == s:
+                    confirma_senha = True
+                    break
+                elif comfirma == "0":
+                    break
+                else:
+                    print(f"{cores(1)}Erro: senha não correspondente!!!{cores()}")
+                    sleep(1)
+        if senha_valida == confirma_senha == True:
+            return s

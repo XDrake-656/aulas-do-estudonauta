@@ -1,6 +1,7 @@
 #Refasendo desafio bonus do mundo 1
 #Super Desafio:** Criar um Gerenciador de Gastos Pessoais no terminal que avise se o saldo ficar negativo.
 from time import sleep
+
 totalGanho = 0
 totalGastos = 0
 cores={'limpa':'\033[m',

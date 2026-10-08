@@ -1,6 +1,8 @@
-from ex115.sistema import *
-from ex115.arquivo import *
 from time import sleep
+
+from ex115.arquivo import *
+from ex115.sistema import *
+
 arq = "pessoascadastradas.txt"
 if not arquivoExiste(arq):
     criarArquivo(arq)

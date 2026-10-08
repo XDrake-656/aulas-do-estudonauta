@@ -1,5 +1,6 @@
 from random import choice
 from time import sleep
+
 palavras_facil = ("BOLA", "CASA", "GATO", "DADO", "LAGO", "MESA", "SAPO", "RATO", "BOLO", "CAJU", "COPO", "LIMA", "POTE", "LUA", "SOL")
 palavras_medio = ("BANANA", "CANETA", "ESCADA", "JIRAFA", "MACACO", "PANELA", "TIJOLO", "PIPOCA", "CAVALO", "RAPOSA", "PASSARINHO", "LIMONADA", "TOMATE", "JANELA", "ALFACE", "ROUPA", "SAFARI")
 palavras_dificil = ("ALFABETO", "CHOCOLATE", "DINOSSAURO", "COMPUTADOR", "ELEFANTE", "GIRAFA", "HELICOPTERO", "PARALELEPIPEDO", "QUADRADO", "TRAVESSEIRO", "ZOOLODICO", "VAMPIRO", "QUILOMETRO", "AMENDOIM", "ARQUITETO")

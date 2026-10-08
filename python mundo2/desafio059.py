@@ -1,4 +1,5 @@
 from time import sleep
+
 num1 = 0
 num2 = 0
 programa = 4

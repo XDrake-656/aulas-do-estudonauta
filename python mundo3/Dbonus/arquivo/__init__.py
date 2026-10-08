@@ -1,50 +1,66 @@
-from Dbonus.sistema import *
-def arquivoExiste(nome):
+# noqa: N999
+from ..sistema import *
+
+
+def arquivo_existe(nome):
     try:
-        a = open(nome, "rt")
-        a.close()
+        with open(nome, "rt"):
+            pass
     except FileNotFoundError:
         return False
     else:
         return True
 
-def criarArquivo(nome):
+
+def criar_arquivo(nome):
     try:
-        a = open(nome, "wt+")
-        a.close()
-    except:
+        with open(nome, "wt+"):
+            pass
+    except FileExistsError:
         print(f"{cores(1)}ERRO! Não foi possivel criar o arquivo {nome}{cores()}")
     else:
         print(f"{cores(2)}arquivo {nome} criado com sucesso!{cores()}")
 
-def leiaArquivo(nome):
-    try:
-        a = open(nome, "rt")
-    except:
-        print(f"{cores(1)}Houve um ERRO ao tentar ler o arquivo!{cores()}")
-    else:
-        usuario = {}
-        lista = []
-        for linha in a:
-            cadastro = linha.split(":")
-            cadastro[1] = cadastro[1].replace("\n", "")
-            usuario["nome"] = cadastro[0]
-            usuario["senha"] = cadastro[1]
-            lista.append(usuario.copy())
 
-    finally:
-        a.close()
+def leia_arquivo(nome):
+    lista = []
+    try:
+        with open(nome, "rt") as a:
+            usuario = {}
+            for linha in a:
+                cadastro = linha.split(":")
+                cadastro[1] = cadastro[1].replace("\n", "")
+                usuario["nome"] = cadastro[0]
+                usuario["senha"] = cadastro[1]
+                lista.append(usuario.copy())
+    except FileNotFoundError:
+        print(f"{cores(1)}Houve um ERRO. Arquivo não encontrado!{cores()}")
+    except PermissionError:
+        print(f"{cores(1)}Houve um ERRO. Você não tem permissão para acessesar esse arquivo!{cores()}")
+    except IsADirectoryError:
+        print(f"{cores(1)}Houve um ERRO. Tentando abrir um diretorio tente apenas arquivo!{cores()}")
+    except UnicodeDecodeError:
+        print(f"{cores(1)}Houve um ERRO. Usando codificação inconpativel!{cores()}")
     return lista
 
-def cadastraNome(txt):
+
+def cadastra_nome(txt):
     try:
-        lista = leiaArquivo("cadastros.txt")
-    except:
-        print(f"{cores(1)}Houve um ERRO ao tentar ler o arquivo!{cores()}")
+        lista = leia_arquivo("cadastros.txt")
+    except FileNotFoundError:
+        print(f"{cores(1)}Houve um ERRO. Arquivo não encontrado!{cores()}")
+    except PermissionError:
+        print(f"{cores(1)}Houve um ERRO. Você não tem permissão para acessesar esse arquivo!{cores()}")
+    except IsADirectoryError:
+        print(f"{cores(1)}Houve um ERRO. Tentando abrir um diretorio tente apenas arquivo!{cores()}")
+    except UnicodeDecodeError:
+        print(f"{cores(1)}Houve um ERRO. Usando codificação inconpativel!{cores()}")
     else:
         while True:
+            invalidos = r""" +=\$%<>*@#!?^&|/"'`"""
+            print("digite seu nome. Usar apenas letras (A-Z), números (0-9) e underline (_) ou hífen (-) e não use espaços.")
             nome = input(txt).strip()
-            if nome == "":
+            if nome == "" or any(caractere in nome for caractere in invalidos):
                 print(f"{cores(1)}ERRO! Nome invalido{cores()}")
             else:
                 for usuario in lista:
@@ -56,30 +72,38 @@ def cadastraNome(txt):
                     break
         return nome
 
+
 def cadastrar(arq, nome, senha):
     try:
-        a = open(arq, "at")
-    except:
-        print(f"{cores(1)}Houve um ERRO ao tentar abrir o arquivo!{cores()}")
-    else:
-        try:
+        with open(arq, "at") as a:
             a.write(f"{nome}:{senha}\n")
-        except:
-            print(f"{cores(1)}Houve um ERRO ao tentar cadastrar o(a) {nome}!{cores()}")
-        else:
-            print(f"{cores(2)}{nome} cadastrado(a) com sucesso!{cores()}")
-            a.close()
+    except FileNotFoundError:
+        print(f"{cores(1)}Houve um ERRO. Arquivo não encontrado!{cores()}")
+    except PermissionError:
+        print(f"{cores(1)}Houve um ERRO. Você não tem permissão para acessesar esse arquivo!{cores()}")
+    except IsADirectoryError:
+        print(f"{cores(1)}Houve um ERRO. Tentando abrir um diretorio tente apenas arquivo!{cores()}")
+    except UnicodeDecodeError:
+        print(f"{cores(1)}Houve um ERRO. Usando codificação inconpativel!{cores()}")
+    else:
+        print(f"{cores(2)}{nome} cadastrado(a) com sucesso!{cores()}")
+
 
 def logar(arq, nome, senha):
     try:
-        lista = leiaArquivo(arq)
-    except:
-        print(f"{cores(1)}Houve um ERRO ao tentar ler o arquivo!{cores()}")
+        lista = leia_arquivo(arq)
+    except FileNotFoundError:
+        print(f"{cores(1)}Houve um ERRO. Arquivo não encontrado!{cores()}")
+    except PermissionError:
+        print(f"{cores(1)}Houve um ERRO. Você não tem permissão para acessesar esse arquivo!{cores()}")
+    except IsADirectoryError:
+        print(f"{cores(1)}Houve um ERRO. Tentando abrir um diretorio tente apenas arquivo!{cores()}")
+    except UnicodeDecodeError:
+        print(f"{cores(1)}Houve um ERRO. Usando codificação inconpativel!{cores()}")
     else:
         for usuario in lista:
             if usuario["nome"] == nome and usuario["senha"] == senha:
                 print(f"{cores(2)}Login realizado com sucesso!{cores()}")
                 return True
-        else:
-            print(f"{cores(1)}ERRO! Nome ou senha incorretos.{cores()}")
-            return False
+        print(f"{cores(1)}ERRO! Nome ou senha incorretos.{cores()}")
+        return False

@@ -5,4 +5,4 @@ elif n.upper() in ("PAULO MARIA ANA JOAO"):
     print("Seu nome me é familiar.")
 else:
     print("Que nome comum!")
-print("Tenha um bom dia, {}!".format(n))
+print(f"Tenha um bom dia, {n}!")

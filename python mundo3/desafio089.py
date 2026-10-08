@@ -18,17 +18,17 @@ turma.sort()
 print("="*40)
 print(f"{'No.':<3} {'NOME':<20} {'MÉDIA':>7}")
 print("="*40)
-for aluno in range(0, len(turma)):
+for aluno in range(len(turma)):
     print(f"{aluno:<3} {turma[aluno][0]:<20} {(turma[aluno][1][0] + turma[aluno][1][1]) / 2:>7.2f}")
 print("="*40)
 while True:
     mostrar = int(input("Mostar nota de qual aluno? [digite 999 para parar] "))
-    if mostrar in range(0,len(turma)):
+    if mostrar in range(len(turma)):
         print("="*40)
         print(f"As notas do/da {turma[mostrar][0]} são {turma[mostrar][1]}.")
     elif mostrar == 999:
             break
-    elif mostrar not in range(0,len(turma)):
+    elif mostrar not in range(len(turma)):
         print("Aluno não encontrado tente novamente\n")
 print("FINALIZANDO...")
 print("<<<< VOLTE SEMPRE >>>>")

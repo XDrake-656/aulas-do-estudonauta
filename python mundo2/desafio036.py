@@ -4,7 +4,7 @@ salario=float(input("quanto você ganha mensamente? "))
 anos=int(input("por quantos anos você pretende dividir as parcelas? "))
 prestacao = casa / (anos*12)
 if prestacao >= (salario*30)/100:
-    print("A prestacao desta casa em {} anos, ficara em R${:.2f}. Infelismente seu salaria de R${:.2f} nao cobre esse valor. \033[1;31memprestimo negado.\033[m".format(anos, prestacao, salario))
+    print(f"A prestacao desta casa em {anos} anos, ficara em R${prestacao:.2f}. Infelismente seu salaria de R${salario:.2f} nao cobre esse valor. \033[1;31memprestimo negado.\033[m")
 else:
-    print("A prestacao desta casa em {} anos, ficara em R${:.2f}. Parabens com um salario de R${:.2f} atende aos requisitos. \033[1;32memprestimo aprovado.\033[m".format(anos, prestacao, salario))
+    print(f"A prestacao desta casa em {anos} anos, ficara em R${prestacao:.2f}. Parabens com um salario de R${salario:.2f} atende aos requisitos. \033[1;32memprestimo aprovado.\033[m")
 print('-+-'*30)

@@ -6,10 +6,10 @@ if n2 > n1 and n2 > n3:
     maior = n2
 if n3 > n1 and n3 > n2:
     maior = n3
-print("O maior numero é {}.".format(maior))
+print(f"O maior numero é {maior}.")
 menor = n1
 if n2 < n1 and n3 < n1:
     menor = n2
 if n3 < n1 and n3 < n2:
     menor = n3
-print("O menor numero é {}.".format(menor))
+print(f"O menor numero é {menor}.")

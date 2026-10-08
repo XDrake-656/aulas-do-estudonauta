@@ -1,4 +1,5 @@
 from random import randint
+
 r=randint(0,100)
 tentativas = 0
 resposta = False

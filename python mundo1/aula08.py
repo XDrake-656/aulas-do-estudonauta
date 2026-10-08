@@ -1,5 +1,7 @@
 import math
+
 print(math.sqrt(81))
 
-import emoji 
+import emoji
+
 print(emoji.emojize('Python is :thumbs_up:'))

@@ -1,5 +1,5 @@
 m1=input("digite algo:")
-print("você digitou {}".format(m1))
+print(f"você digitou {m1}")
 print("o tipo primitivo desse valor é",type(m1))
 print("o valor é numérico?",m1.isdigit())
 print("o valor é alphabetic?",m1.isalpha())

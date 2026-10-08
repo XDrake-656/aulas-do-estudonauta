@@ -1,5 +1,6 @@
 from random import randint
 from time import sleep
+
 lista = []
 print("="*35 + f"\n{"JOGA NA MEGA SENA":^35}\n" + "="*35)
 jogos = int(input("Digite quantos jogos você quer sortear? "))
@@ -12,4 +13,4 @@ for c in range(1,jogos + 1):
     print(f"jogo {c}: {sorted(lista)}")
     lista.clear()
     sleep(1)
-print(f"{f" BOA SORTE! ":=^35}")
+print(f"{" BOA SORTE! ":=^35}")

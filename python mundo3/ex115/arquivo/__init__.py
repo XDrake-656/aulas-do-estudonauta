@@ -1,4 +1,6 @@
 from ex115.sistema import *
+
+
 def arquivoExiste(nome):
     try:
         a = open(nome, "rt")

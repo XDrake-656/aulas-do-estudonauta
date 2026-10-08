@@ -1,4 +1,5 @@
 from datetime import datetime
+
 atual = datetime.today().year
 
 def voto(nascimento):

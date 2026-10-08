@@ -1,5 +1,6 @@
 from random import randrange
 from time import sleep
+
 import emoji
 
 jogadas = {'1': '📃', '2': '✂', '3': '🪨'}

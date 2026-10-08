@@ -1,6 +1,6 @@
 # falhei no exercicio porem tentei de novo no dia seguinte e consegui 
 lista = []
-for c in range(0,6):
+for c in range(6):
     num = int(input("Digite um numero: "))
     if c == 0 or num >= max(lista):
         lista.append(num)

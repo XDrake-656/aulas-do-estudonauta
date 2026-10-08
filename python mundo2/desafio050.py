@@ -1,5 +1,5 @@
 valor = 0
-for c in range(0,6):
+for c in range(6):
     n=int(input("Escreva um numero inteiro: "))
     print(f"numero digitado foi {n}.")
     if n % 2 == 0:

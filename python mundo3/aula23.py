@@ -6,7 +6,7 @@ try:
 except (ValueError, TypeError):
     print("Tivemos um problema com os tipos de dadso que voce digitou.")
 except ZeroDivisionError:
-    print(f"Não é possivel dividir um numero por zero!")
+    print("Não é possivel dividir um numero por zero!")
 except KeyboardInterrupt:
     print("O usario preferriu não informar os dados")
 except Exception as erro:

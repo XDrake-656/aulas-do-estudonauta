@@ -1,4 +1,5 @@
 from random import randint
+
 lista = ()
 maior = menor = 0
 for c in range(1, 6):

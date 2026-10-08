@@ -4,7 +4,7 @@ palavras = (
     "arvore", "fly", "janela", "Myth", "escola"
             )
 Vogais = ("A", "E", "I", "O", "U", "a", "e", "i", "o", "u")
-for c in range(0, len(palavras)):
+for c in range(len(palavras)):
     print(f"\nNa palavra {palavras[c]} tem Quais vogais? ", end="")
     letras = list(palavras[c])
     vogal = False

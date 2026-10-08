@@ -1,2 +1,2 @@
 p=float(input("preço do produto:"))
-print("o produto que custava R${:.2f} com 5% de desconto vai custar R${:.2f}".format(p,p-((5/100)*p)))
+print(f"o produto que custava R${p:.2f} com 5% de desconto vai custar R${p-((5/100)*p):.2f}")

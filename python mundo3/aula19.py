@@ -3,7 +3,7 @@ print(f"O {pessoas["nome"]} tem {pessoas["idade"]} anos.")
 print(pessoas.keys())
 print(pessoas.values())
 print(pessoas.items())
-for k in pessoas.keys():
+for k in pessoas:
     print(k)
 for v in pessoas.values():
     print(v)
@@ -35,7 +35,7 @@ print(Brasil[1]["sigla"])
 
 brasil = list()
 estado = dict()
-for c in range(0, 3):
+for c in range(3):
     estado["uf"] = input("Unidade federativa: ")
     estado["sigla"] = input("Sigla do Estado: ")
     brasil.append(estado.copy())

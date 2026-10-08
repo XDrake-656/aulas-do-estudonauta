@@ -4,5 +4,6 @@ n=float(input("Digite um numero: "))
 print("o numero inteiro digitado é {}".format(int(n)))
 """
 import math
+
 n=float(input("Digite um numero: "))
-print("O numero digitado {} tem sua parte inteira digitada é {}".format(n, math.floor(n)))
+print(f"O numero digitado {n} tem sua parte inteira digitada é {math.floor(n)}")

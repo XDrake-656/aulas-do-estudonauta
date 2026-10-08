@@ -1,4 +1,5 @@
 from datetime import date
+
 a=int(input("Em que ano você nasceu? "))
 i=(date.today().year)-a
 if i <= 9:

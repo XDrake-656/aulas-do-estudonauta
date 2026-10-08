@@ -25,8 +25,8 @@ for c in range(1, num +1):
         tot = tot + 1
     else:
         print("\033[31m", end="")
-    print("{} ".format(c), end="")
-print("\n\033[mO numero {} foi divisivel {} vezes".format(num,tot))
+    print(f"{c} ", end="")
+print(f"\n\033[mO numero {num} foi divisivel {tot} vezes")
 if tot == 2:
     print("E po isso ele é PRIMO!")
 else:

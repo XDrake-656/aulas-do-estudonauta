@@ -7,10 +7,8 @@ while not resposta:
     if quatnum == 1:
         maior = menor = num
     else:
-        if num > maior:
-            maior = num
-        if num < menor:
-            menor = num
+        maior = max(maior, num)
+        menor = min(menor, num)
     con = str(input("Você quer digitar outro numero(S/N): ")).strip().upper()[0]
     if con == "N":
         media = soma / quatnum

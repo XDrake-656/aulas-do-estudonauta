@@ -1,17 +1,19 @@
-from Dbonus.sistema import *
-from Dbonus.arquivo import *
 from time import sleep
+
+from Dbonus.arquivo import *
+from Dbonus.sistema import *
+
 arq = "cadastros.txt"
-if not arquivoExiste(arq):
-    criarArquivo(arq)
+if not arquivo_existe(arq):
+    criar_arquivo(arq)
 login = False
 while True:
     tabela(["criar conta", "Logar no sistema", "Sair do sistema"])
-    opc = leiaInt(f"{cores(2)}Sua opção: {cores()}")
+    opc = leia_int(f"{cores(2)}Sua opção: {cores()}")
     if opc == 1:
         titulo("NOVO CADASTRO")
-        nome = cadastraNome("NOME: ")
-        sen = cadastrarSenha("SENHA: ")
+        nome = cadastra_nome("NOME: ")
+        sen = cadastrar_senha("SENHA: ")
         cadastrar(arq, nome, sen)
 
     elif opc == 2:

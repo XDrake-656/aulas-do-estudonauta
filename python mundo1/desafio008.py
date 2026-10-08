@@ -1,2 +1,2 @@
 m=float(input("digite o valor do metro:"))
-print("o valor do metro é {}m convertendo para centimetros é {}cm e milimetros é {}mm".format(m,m*100,m*1000))
+print(f"o valor do metro é {m}m convertendo para centimetros é {m*100}cm e milimetros é {m*1000}mm")

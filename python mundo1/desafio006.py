@@ -1,2 +1,2 @@
 n1=int(input("digite um numero:"))
-print("o numero digitado foi {} e o seu valor dobrado é {} e triplicado é {} e sua raiz quadrada é {:.3f}".format(n1,n1*2,n1*3,n1**(1/2)))
+print(f"o numero digitado foi {n1} e o seu valor dobrado é {n1*2} e triplicado é {n1*3} e sua raiz quadrada é {n1**(1/2):.3f}")

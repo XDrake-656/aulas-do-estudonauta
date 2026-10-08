@@ -1,2 +1,2 @@
 n1=int(input("digite um numero inteiro:"))
-print("o numero digitado foi {} e o seu susecessor é {} e o seu antecessor é {}".format(n1,n1+1,n1-1))
+print(f"o numero digitado foi {n1} e o seu susecessor é {n1+1} e o seu antecessor é {n1-1}")

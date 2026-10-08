@@ -46,10 +46,10 @@ octal = converter_para_base(n, 8)
 hexadecimal = converter_para_base(n, 16)
 
 if b == 1:
-    print("O numero {} em binario se escreve {}.".format(n, binario))
+    print(f"O numero {n} em binario se escreve {binario}.")
 elif b == 2:
-    print("O numero {} em octal se escreve {}.".format(n, octal))
+    print(f"O numero {n} em octal se escreve {octal}.")
 elif b == 3:
-    print("O numero {} em hexadecimal se escreve {}.".format(n, hexadecimal))
+    print(f"O numero {n} em hexadecimal se escreve {hexadecimal}.")
 else:
     print("Você não escreveu uma base de conversao aceitavel!!!")

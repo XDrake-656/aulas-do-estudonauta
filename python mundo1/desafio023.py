@@ -8,4 +8,4 @@ u= n // 1 % 10
 d= n // 10 % 10
 c= n // 100 % 10
 m= n // 1000 % 10
-print("O numero digitado {} \ntem a unidade: {} \ndezena: {} \ncentena: {} \nmilhar: {}".format(n,u,d,c,m))
+print(f"O numero digitado {n} \ntem a unidade: {u} \ndezena: {d} \ncentena: {c} \nmilhar: {m}")

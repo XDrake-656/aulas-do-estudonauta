@@ -1,4 +1,5 @@
 from datetime import date
+
 n=int(input("em que ano você nasceu? "))
 i=(n-(date.today().year))*-1
 if i > 18:

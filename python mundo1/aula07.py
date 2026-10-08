@@ -6,4 +6,4 @@ d=n1/n2
 di=n1//n2
 rd=n1%n2
 p=n1**n2
-print("as operações entre os números {} e {} são: \n a soma é {} \n a multiplicação é {} \n a potencia é {} \n a divisão é {:.3f} \n a divisão inteira é {} \n e o resto da divisão é {}".format(n1,n2,s,m,p,d,di,rd))
+print(f"as operações entre os números {n1} e {n2} são: \n a soma é {s} \n a multiplicação é {m} \n a potencia é {p} \n a divisão é {d:.3f} \n a divisão inteira é {di} \n e o resto da divisão é {rd}")

@@ -1,5 +1,6 @@
 from random import randint
 from time import sleep
+
 jogadores = {}
 lista = []
 for j in range(1, 5):

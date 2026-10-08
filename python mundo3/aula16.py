@@ -10,7 +10,7 @@ print(sorted(lanche))
 for comida in lanche:
     print(f"Eu vou comer {comida}")
 
-for possicao in range(0, len(lanche)):
+for possicao in range(len(lanche)):
     print(f"Eu vou comer {lanche[possicao]} na posicao {possicao}")
     
 for poss, comida in enumerate(lanche):

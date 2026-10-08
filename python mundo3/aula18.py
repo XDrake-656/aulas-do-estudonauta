@@ -17,7 +17,7 @@ for p in galera:
 galera = list()
 dados = list()
 maior = menor = 0
-for c in range(0, 3):
+for c in range(3):
     dados.append(str(input("Nome: ")).strip().title())
     dados.append(int(input("Idade: ")))
     galera.append(dados[:])

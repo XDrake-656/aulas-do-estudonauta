@@ -1,5 +1,6 @@
 from random import randint
 
+
 def sorteia():
     numeros = []
     for n in range(1,6):

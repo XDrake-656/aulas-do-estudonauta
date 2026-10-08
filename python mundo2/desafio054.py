@@ -1,4 +1,5 @@
 from datetime import date
+
 ano = date.today().year
 grupo = 0
 grupo_menor = 0
